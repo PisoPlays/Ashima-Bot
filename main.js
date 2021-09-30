@@ -1,5 +1,5 @@
-
 const Discord = require('discord.js');
+require('dotenv').config();
 
 const client = new Discord.Client({
     intents: [
@@ -15,7 +15,4 @@ client.once('ready', () => {
 })
 
 
-
-
-
-client.login(process.env.token)
+client.login(process.env.TOKEN);
